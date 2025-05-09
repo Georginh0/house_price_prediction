@@ -81,7 +81,7 @@ class MultivariateAnalysis(MultivariateAnalysis):
 
 def generate_pairplot(self, df: pd.DataFrame):
     """
-    Generates and displays a pair plot for the selected features in the 
+    Generates and displays a pair plot for the selected features in the
     dataframe.
 
     Parameters:
@@ -93,22 +93,21 @@ def generate_pairplot(self, df: pd.DataFrame):
     sns.pairplot(df)
     plt.suptitle("Pair Plot of Selected Features", y=1.02)
     plt.show()
-    
-    
+
 
 if __name__ == "__main__":
- 
-
     # Load the data
-     df = pd.read_csv('extracted_data/AmesHousing.csv')
+    df = pd.read_csv("extracted_data/AmesHousing.csv")
 
     # Perform Multivariate Analysis
-     multivariate_analyzer = MultivariateAnalysis()
+    multivariate_analyzer = MultivariateAnalysis()
 
     # Select important features for pair plot
-     selected_features = df[['SalePrice', 'Gr Liv Area', 'Overall Qual', 'Total Bsmt SF', 'Year Built']]
+    selected_features = df[
+        ["SalePrice", "Gr Liv Area", "Overall Qual", "Total Bsmt SF", "Year Built"]
+    ]
 
     # Execute the analysis
-     multivariate_analyzer.analyze(selected_features)
-    pass
+    multivariate_analyzer.analyze(selected_features)
 
+    pass

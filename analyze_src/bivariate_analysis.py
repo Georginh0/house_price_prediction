@@ -30,7 +30,8 @@ class BivariateAnalysisStrategy(ABC):
 
 # Concrete Strategy for Numerical vs Numerical Analysis
 # ------------------------------------------------------
-# This strategy analyzes the relationship between two numerical features using scatter plots
+# This strategy analyzes the relationship between two numerical features using
+# scatter plots
 # and correlation coefficients.
 
 
