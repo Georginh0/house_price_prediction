@@ -119,4 +119,6 @@ if __name__ == "__main__":
     # Change strategy to Summary Statistics and execute
     inspector.set_strategy(SummaryStatisticsInspectionStrategy())
     summary_stats_results = inspector.execute_inspection(df)
-    logging.info("Summary Statistics Inspection Results: %s", summary_stats_results)
+    logging.info(
+        "Summary Statistics Inspection Results: %s", summary_stats_results
+    )
