@@ -102,9 +102,7 @@ class StandardScaling(FeatureEngineeringStrategy):
         """
         logging.info(f"Applying standard scaling to features: {self.features}")
         df_transformed = df.copy()
-        df_transformed[self.features] = self.scaler.fit_transform(
-            df[self.features]
-        )
+        df_transformed[self.features] = self.scaler.fit_transform(df[self.features])
         logging.info("Standard scaling completed.")
         return df_transformed
 

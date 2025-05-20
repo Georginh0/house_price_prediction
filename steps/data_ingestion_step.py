@@ -6,7 +6,7 @@ from zenml import step
 
 @step
 def data_ingestion_step(file_path: str) -> pd.DataFrame:
-    """
+    """python run_deployment.pypython run_deployment.py
     Ingest data from a ZIP file using the appropriate DataIngestor.
 
     Args:
